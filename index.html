@@ -21,6 +21,7 @@
           id="player1"
           placeholder="Jogador 1"
         />
+        <br />
         <label for="player2">O</label>
         <input
           type="text"
@@ -28,12 +29,20 @@
           id="player2"
           placeholder="Jogador 2"
         />
+        <br />
+      </div>
+      <div class="start">
         <button id="start">Start</button>
       </div>
     </div>
     <h2>Vez de: <span id="turnPlayer"></span></h2>
-    <section>
-      <span data-region=""></span>
+    <section class="play-board">
+      <div class="details">
+        <div class="players">
+          <span class="Xturn">Vez de X</span>
+          <span class="Oturn">Vez de O</span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
