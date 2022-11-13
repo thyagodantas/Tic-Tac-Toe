@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Tic Tac Toe</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="select-box">
@@ -38,8 +39,14 @@
     <div class="play-board">
       <div class="details">
         <div class="players">
-          <span class="Xturn">Vez de X</span>
-          <span class="Oturn">Vez de O</span>
+          <span class="Xturn"
+            >Vez de
+            <p id="xPlayer">X</p></span
+          >
+          <span class="Oturn"
+            >Vez de
+            <p id="oPlayer">O</p></span
+          >
           <div class="slider"></div>
         </div>
       </div>
