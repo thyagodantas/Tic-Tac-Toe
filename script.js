@@ -1,23 +1,24 @@
-const selectBox = document.querySelector(".select-box");
-start = selectBox.querySelector("button[id='start']");
-playBoard = document.querySelector(".play-board");
+const selectBox = document.querySelector(".select-box"),
+  start = document.getElementById("start"),
+  playBoard = document.querySelector(".play-board"),
+  allBox = document.querySelectorAll("section span"),
+  players = document.querySelector(".players");
 
-let turnPlayer = "";
-
-function updateTitle() {
-  const getXplayer = document.getElementById("player1");
-  const getOplayer = document.getElementById("player2");
-  let xPlayer = document.getElementById("xPlayer");
-  xPlayer.innerText = getXplayer.value;
-  let OPlayer = document.getElementById("oPlayer");
-  OPlayer.innerText = getOplayer.value;
-}
-
-updateTitle;
 window.onload = () => {
-  //window loaded
-  start.onclick = () => {
-    selectBox.classList.add("hide"); // 'hide' do menu de informações
-    playBoard.classList.add("show"); // 'show' do menu do game
-  };
+  for (let i = 0; i < allBox.length; i++) {
+    allBox[i].setAttribute("onclick", "clickedBox(this)");
+  }
 };
+
+start.onclick = () => {
+  selectBox.classList.add("hide");
+  playBoard.classList.add("show");
+};
+
+let playerXIcon = "fas fa-times";
+let playerOIcon = "far fa-circle";
+
+function clickedBox(element) {
+  //if() {
+  //}
+}
